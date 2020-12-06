@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            height: 100px;
+            width: 100%;
+            background-image: linear-gradient(to right, rgb(30, 255, 0), rgb(132, 255, 245));
+        }
+        
+        #logoBox {
+            width: 30%;
+            height: 100%;
+            float: right;
+            background-color: rgb(243, 243, 243);
+        }
+        
+        #h1Header {
+            float: left;
+            line-height: 100px;
+            padding: 0 5px;
+        }
+        
+        #logo {
+            float: left;
+            height: 100px;
+            border-radius: 50%;
+        }
+        nav{width: 70%;text-align: center;
+        }
+        nav a{text-decoration: none;font-size: 20px;color: azure;
+        font-weight: bold;
+        display: inline-block;
+        
+        }
+        nav li{display: inline-block;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;}
+        nav a:hover{color: black;
+         background-color: white;
+         width:100%;
+         height: 100%;
+        }
+        main{
+            width: 100%;
+            height: 500px;
+            background-color: rgba(255, 38, 38, 0.836);
+            border-top: white 3px solid;
+            animation-name:changeBackground ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    
+
+        
+        @keyframes changeBackground{
+            0%{background-color: white;}
+            10%{background-color: rgb(245, 255, 105);}
+            20% {background-color:rgb(208, 255, 0);}
+            30%{background-color:rgb(102, 255, 0) ;}
+            40%{background-color: rgb(112, 255, 56);}
+            50%{background-color: rgba(10, 255, 83, 0.418);}
+            60%{background-color: rgb(5, 238, 255)}
+            70%{background-color: rgb(10, 239, 255);}
+            80%{background-color: rgb(107, 250, 255);}
+            90%{background-color: rgba(188, 255, 252, 0.418);}
+            100%{background-color: rgb(255, 255, 255);}
+
+
+        }
+        aside{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(243, 243, 243);
+            text-align: center;
+            float: left;
+        }
+        aside img{
+            width: 90%;
+            
+        }
+        #h1aside{
+            padding: 20px;
+            font-size: 30px;
+            border-bottom: red 2px solid;}
+        #article{
+            float: right;
+            width: 70%;
+            height: 500px;
+            position: relative;}
+        #div{
+            padding: 15px;
+            text-align: center;
+            position: absolute;
+            width: 400px;
+            height: 180px;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50% ,-50%) ;
+        }
+        #div h1{border-bottom: red solid 2px;font-family: 'Cairo', sans-serif}
+        #div p{font-family: 'Cairo', sans-serif;
+        }
+        #div2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            }
+        #div2 img{width: 45%;
+        border-bottom: rgb(255, 255, 255) groove;}
+        #div2 img:hover{width: 60%;}
+        @media all{}
+        #article2{
+            padding-top: 20px;
+            background-color: rgb(255, 44, 44);
+            float: right;
+            text-align: center;
+            height: 400px;
+            width: 70%;
+        }
+        #article2 h1{
+            color: aliceblue;
+            font-size: 30px;
+        }
+        #marginhr{
+            height: 2px;
+            background-color: rgb(255, 19, 19);
+            padding-top: 5px;
+        }
+        
+
+    </style>
+
+</head>
+
+<body id="body">
+    <header>
+        <span id="logoBox">
+          <a href=""><h1 id="h1Header">Mamoune Allouti</h1></a>
+          <a href=""><img src="image.jpg" id="logo" /></a>
+      
+    
+        </span>
+        <span>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Python</a>
+            </li>
+            <li>
+                <a href="">Contact me</a>
+            </li>
+        </ul>
+    </nav>
+        </span>
+    </header>
+    <main>
+        <aside>
+            <a href="https://www.youtube.com/channel/UCcAE456afKpA77Bz2L6nK7Q/">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Z-_uX6Y79lo6nwWN1BUsZQHaHa&pid=Api&P=0&w=300&h=300" alt="">   
+            </a>
+            <h1 id="h1aside">Follow Me On YouTube</h1>
+            <div id="div2">
+                <a href=""><img src="https://tse2.mm.bing.net/th?id=OIP.vkJrn0ZysU-0Z23Y-sgOWwHaHa&pid=Api&P=0&w=300&h=300" ></a>
+                <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.wjuBtQkkm8e1FmV8LaQ7MAHaHa&pid=Api&P=0&w=300&h=300" ></a>
+                <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.5lD7eaJx0xSTbZQzn8zydwAAAA&pid=Api&P=0&w=300&h=300" ></a>
+                
+            </div>
+            <hr id="marginhr">
+        </aside>
+        <article id="article">
+            <div id="div">
+                <h1>Mamoune Allouti</h1>
+                <hr>
+                <p> انا مهندس للبرمجيات اعيش في الجزائر بمنطقة القبائل سأساعد الناس على تعلم البرمجة عبر اليوتيوب لذا اشتركو في قناتي على اليوتيوب من فضلكم</p>
+            </div>
+
+        </article>
+        <article id="article2"> 
+            <h1>في هذه الصفحة سوف تجد كل ما يخصني و كل ما ينفعك كمبرمج</h1>
+
+
+        </article>
+        
+
+    </main>
+</body>
+
+</html>
