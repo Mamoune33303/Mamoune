@@ -2,11 +2,23 @@
 <html>
 <head>
     <title>Mamoune Allouti</title>
+
+
+
+
+
+
+
+
+
+    <meta name="description" content="hi i am mamoune Allouti from Algeria "/>
     <link rel="icon" href="icon.png">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap" rel="stylesheet">
+    
+    
     <style>
         * {
             padding: 0;
@@ -28,13 +40,13 @@
         
         #h1Header {
             float: left;
-            line-height: 100px;
-            padding: 0 5px;
+            line-height: 200%;
+            padding: 05px;
         }
         
         #logo {
             float: left;
-            height: 100px;
+            height: 100%;
             border-radius: 50%;
         }
         nav{width: 70%;text-align: center;
@@ -125,7 +137,6 @@
         @media all{}
         #article2{
             padding-top: 20px;
-            background-color: rgb(255, 44, 44);
             float: right;
             text-align: center;
             height: 400px;
@@ -137,10 +148,46 @@
         }
         #marginhr{
             height: 2px;
-            background-color: rgb(255, 19, 19);
+            background-color: rgb(255, 43, 43);
             padding-top: 5px;
         }
-        
+
+        @media only screen and (min-width:940px) and (max-width: 1070px){
+            #logoBox{width: 35%;}
+            #article{width: 65%;}
+            aside{width: 35%;}
+
+        }
+        @media only screen and (max-width: 940px) and (min-width:802px){
+            #logoBox{width: 40%;}
+        }
+        @media only screen and (max-width:802px){
+            header,main{
+                height: auto;
+            }
+            #logoBox{
+                width: 100%;
+                text-align: center;
+            }
+            #h1Header,#logo{
+                float: none;
+            }
+            span a {
+                text-decoration: none;
+            }
+            nav {
+                width: 100%;
+            }
+            aside{
+                width: 100%;
+            }
+            #article{
+                height: 230px;
+                width: 100%;
+                background-color: lightgray;
+            }
+
+        }
 
     </style>
 
@@ -149,8 +196,8 @@
 <body id="body">
     <header>
         <span id="logoBox">
-          <a href=""><h1 id="h1Header">Mamoune Allouti</h1></a>
-          <a href=""><img src="image.jpg" id="logo" /></a>
+          <a href=""><h1 id="h1Header">Mamoune Coder</h1></a>
+          <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.-kQtPV9cxovc1RYoLBXibQHaHa&pid=Api&P=0&w=300&h=300" id="logo" /></a>
       
     
         </span>
@@ -193,7 +240,6 @@
 
         </article>
         <article id="article2"> 
-            <h1>في هذه الصفحة سوف تجد كل ما يخصني و كل ما ينفعك كمبرمج</h1>
 
 
         </article>
