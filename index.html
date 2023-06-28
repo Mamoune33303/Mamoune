@@ -1,253 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Mamoune Allouti</title>
-
-
-
-
-
-
-
-
-
-    <meta name="description" content="hi i am mamoune Allouti from Algeria "/>
-    <link rel="icon" href="icon.png">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap" rel="stylesheet">
-    
-    
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        
-        header {
-            height: 100px;
-            width: 100%;
-            background-image: linear-gradient(to right, rgb(30, 255, 0), rgb(132, 255, 245));
-        }
-        
-        #logoBox {
-            width: 30%;
-            height: 100%;
-            float: right;
-            background-color: rgb(243, 243, 243);
-        }
-        
-        #h1Header {
-            float: left;
-            line-height: 200%;
-            padding: 05px;
-        }
-        
-        #logo {
-            float: left;
-            height: 100%;
-            border-radius: 50%;
-        }
-        nav{width: 70%;text-align: center;
-        }
-        nav a{text-decoration: none;font-size: 20px;color: azure;
-        font-weight: bold;
-        display: inline-block;
-        
-        }
-        nav li{display: inline-block;
-        line-height: 100px;
-        width: 100px;
-        text-align: center;}
-        nav a:hover{color: black;
-         background-color: white;
-         width:100%;
-         height: 100%;
-        }
-        main{
-            width: 100%;
-            height: 500px;
-            background-color: rgba(255, 38, 38, 0.836);
-            border-top: white 3px solid;
-            animation-name:changeBackground ;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-        }
-    
+    <title>Welcom To ACKS : Home</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        
-        @keyframes changeBackground{
-            0%{background-color: white;}
-            10%{background-color: rgb(245, 255, 105);}
-            20% {background-color:rgb(208, 255, 0);}
-            30%{background-color:rgb(102, 255, 0) ;}
-            40%{background-color: rgb(112, 255, 56);}
-            50%{background-color: rgba(10, 255, 83, 0.418);}
-            60%{background-color: rgb(5, 238, 255)}
-            70%{background-color: rgb(10, 239, 255);}
-            80%{background-color: rgb(107, 250, 255);}
-            90%{background-color: rgba(188, 255, 252, 0.418);}
-            100%{background-color: rgb(255, 255, 255);}
-
-
-        }
-        aside{
-            width: 30%;
-            height: 100%;
-            background-color: rgb(243, 243, 243);
-            text-align: center;
-            float: left;
-        }
-        aside img{
-            width: 90%;
-            
-        }
-        #h1aside{
-            padding: 20px;
-            font-size: 30px;
-            border-bottom: red 2px solid;}
-        #article{
-            float: right;
-            width: 70%;
-            height: 500px;
-            position: relative;}
-        #div{
-            padding: 15px;
-            text-align: center;
-            position: absolute;
-            width: 400px;
-            height: 180px;
-            background-color: white;
-            top: 50%;
-            left: 50%;
-            transform:translate(-50% ,-50%) ;
-        }
-        #div h1{border-bottom: red solid 2px;font-family: 'Cairo', sans-serif}
-        #div p{font-family: 'Cairo', sans-serif;
-        }
-        #div2{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            }
-        #div2 img{width: 45%;
-        border-bottom: rgb(255, 255, 255) groove;}
-        #div2 img:hover{width: 60%;}
-        @media all{}
-        #article2{
-            padding-top: 20px;
-            float: right;
-            text-align: center;
-            height: 400px;
-            width: 70%;
-        }
-        #article2 h1{
-            color: aliceblue;
-            font-size: 30px;
-        }
-        #marginhr{
-            height: 2px;
-            background-color: rgb(255, 43, 43);
-            padding-top: 5px;
-        }
-
-        @media only screen and (min-width:940px) and (max-width: 1070px){
-            #logoBox{width: 35%;}
-            #article{width: 65%;}
-            aside{width: 35%;}
-
-        }
-        @media only screen and (max-width: 940px) and (min-width:802px){
-            #logoBox{width: 40%;}
-        }
-        @media only screen and (max-width:802px){
-            header,main{
-                height: auto;
-            }
-            #logoBox{
-                width: 100%;
-                text-align: center;
-            }
-            #h1Header,#logo{
-                float: none;
-            }
-            span a {
-                text-decoration: none;
-            }
-            nav {
-                width: 100%;
-            }
-            aside{
-                width: 100%;
-            }
-            #article{
-                height: 230px;
-                width: 100%;
-                background-color: lightgray;
-            }
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body id="body">
-    <header>
-        <span id="logoBox">
-          <a href=""><h1 id="h1Header">Mamoune Coder</h1></a>
-          <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.-kQtPV9cxovc1RYoLBXibQHaHa&pid=Api&P=0&w=300&h=300" id="logo" /></a>
-      
-    
-        </span>
-        <span>
-    <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Python</a>
-            </li>
-            <li>
-                <a href="order.html" target="_blank">Contact me</a>
-            </li>
-        </ul>
-    </nav>
-        </span>
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#download">Sell/Buy</a>
+            <a href="#footer">Contact</a>
+            <a href="#" class="btn">Log in</a>
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
     </header>
-    <main>
-        <aside>
-            <a href="https://www.youtube.com/channel/UCcAE456afKpA77Bz2L6nK7Q/">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.Z-_uX6Y79lo6nwWN1BUsZQHaHa&pid=Api&P=0&w=300&h=300" alt="">   
-            </a>
-            <h1 id="h1aside">Follow Me On YouTube</h1>
-            <div id="div2">
-                <a href=""><img src="https://tse2.mm.bing.net/th?id=OIP.vkJrn0ZysU-0Z23Y-sgOWwHaHa&pid=Api&P=0&w=300&h=300" ></a>
-                <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.wjuBtQkkm8e1FmV8LaQ7MAHaHa&pid=Api&P=0&w=300&h=300" ></a>
-                <a href=""><img src="https://tse3.mm.bing.net/th?id=OIP.5lD7eaJx0xSTbZQzn8zydwAAAA&pid=Api&P=0&w=300&h=300" ></a>
-                
+    <!-- navbar sections starts  -->
+
+   
+    <!-- home section stars  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>ACKS : Sell&Buy Stuffs</h1>
+            <p>a great spot to start your business or buy or sell yours , don't start from the zero , start with acks</p>
+
+            <a href="#" class="home-btn">Take a look</a>
+        </div>
+
+
+        <div class="image">
+            <img src="photo.jpg">
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features sectin starts  -->
+
+    <section class="features" id="features">
+        <div class="heading">
+            <h1>Features</h1>
+            <p>Our aim is to make it quick and easy for you to make money without spending a lot , we are diffrent from others</p>
+        </div>
+
+
+        <div class="row">
+            <!-- 1 Tab  -->
+            <div class="image">
+                <img src="second.jpg">
             </div>
-            <hr id="marginhr">
-        </aside>
-        <article id="article">
-            <div id="div">
-                <h1>Mamoune Allouti</h1>
-                <hr>
-                <p> انا مهندس للبرمجيات اعيش في الجزائر بمنطقة القبائل سأساعد الناس على تعلم البرمجة عبر اليوتيوب لذا اشتركو في قناتي على اليوتيوب من فضلكم</p>
+
+
+            <div class="content">
+                <h1>Start working in one minute</h1>
+                <p>by sending us a message in our email , you will have access to put your product or service for sell , we do advertizing for free</p>
+                <a href="#" class="all-btn">more info</a>
             </div>
 
-        </article>
-        <article id="article2"> 
+            <!-- 1 Tab  -->
+
+            <!-- 2 Tab  -->
+            <div class="content">
+                <h1>Intelligent search</h1>
+                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <a href="#" class="all-btn">more info</a>
+            </div>
+
+            <div class="image">
+                <img src="planes.jpg" alt="illustration-features-tab-2">
+            </div>
+
+            <!-- 2 Tab  -->
+
+            <div class="image">
+                <img src="add.jpg" alt="illustration-features-tab-3">
+            </div>
+
+            <div class="content">
+                <h1>Don't start from the zero</h1>
+                <p>Easily get a ready working business and grow it more fast , don't start from the zero, start from ACKS</p>
+                <a href="#" class="all-btn">more info</a>
+            </div>
 
 
-        </article>
-        
+            <!-- 3 Tab  -->
 
-    </main>
-    <hr style="height:50px;"/>
+        </div>
+    </section>
 
-       </body>
+
+    <!-- features sectin ends -->
+
+
+    <!-- downloads section starts  -->
+
+    <section class="download" id="download">
+        <div class="heading">
+            <h1>Get Your Spote</h1>
+            <p>We got a lot of space for you , post your product right now and start selling for free , your customers needs you </p>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/logo-chrome.svg" alt="logo-chrome">
+
+                <h3>Get a spote</h3>
+                <p>Minimum Version 63</p>
+                <a href="#" class="all-btn">Browse</a>
+            </div>
+
+            <div class="box">
+                <img src="images/logo-firefox.svg" alt="logo-firefox">
+
+                <h3>Buy a service</h3>
+                <p>Minimum Version 55</p>
+                <a href="#" class="all-btn">Browse</a>
+            </div>
+
+            <div class="box">
+                <img src="images/logo-opera.svg" alt="logo-opera">
+
+                <h3>Sell your service</h3>
+                <p>Minimum Version 46</p>
+                <a href="#" class="all-btn">Browse</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- downloads section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+   <section class="footer" id="footer">
+       <div class="box-container">
+           <div class="box">
+               <h3>quick links</h3>
+               <a href="#"><i class="fas fa-chevron-right"></i>home</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>features</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>Buy/sell</a>
+               <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
+            </div>
+            
+            
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#"><i class="fas fa-chevron-right"></i>selling/buying businesses </a>
+                <a href="#"><i class="fas fa-chevron-right"></i>growing businesses </a>
+                <a href="#"><i class="fas fa-chevron-right"></i>working planes</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>online coaching & consulting</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>improving earning skills </a>
+           </div>
+
+           <div class="box">
+               <h3>contact info</h3>
+               <a href="#"><i class="fas fa-phone"></i>+123-456-789</a>
+               <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+               <a href="#"><i class="fas fa-envelope"></i>acksmailbox@gmail.com</a>
+               <a href="#"><i class="fas fa-envelope"></i>ecconsultingdz@gmail.com</a>
+               <a href="#"><i class="fas fa-map-marker-alt"></i>Algeria,Kuwait - 12345</a>
+           </div>
+
+           <div class="box">
+               <h3>follow us</h3>
+               <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+               <a href="#"><i class="fab fa-twitter"></i>facebook</a>
+               <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+               <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+               <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+           </div>
+       </div>
+
+
+       <div class="credit">created by
+           <a href="https://www.instagram.com/mamoune_allouti" target="_blank"><span>Mamoune Allouti</span> | all rights reserved</a>
+       </div>
+   </section>
+
+    <!-- footer section ends -->
+
+
+    <script src="js/main.js"></script>
+</body>
 
 </html>
